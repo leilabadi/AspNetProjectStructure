@@ -1,0 +1,20 @@
+# install npm
+# go to web project directory
+
+# install bower for client-side dependency management
+npm install -g bower
+
+# install angular comand line utility
+npm install -g @angular/cli
+
+# install required dependencies
+bower install jquery --save
+bower install bootstrap --save
+
+# change the client-app if you need
+ng new client-app --minimal
+cd client-app
+ng build
+ng serve
+
+ng build --watch
